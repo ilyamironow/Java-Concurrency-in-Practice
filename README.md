@@ -1,2 +1,2 @@
 # Java-Concurrency-in-Practice
-Here will be listed my small-scale examples of concurrent programs in Java
+Here will be listed my small-scale examples of concurrent programs in Java related to the first 4 part of book.
