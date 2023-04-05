@@ -3,11 +3,7 @@ public class ThisEscape {
 
     public ThisEscape(EventSource source) {
         source.registerListener(
-            new EventListener() {
-                public void onEvent(Event e) {
-                    doSomething(e);
-                }
-            }
+            e -> doSomething(e)
         );
 
         // Sleep for a short duration (200 ms) before initializing the value field
