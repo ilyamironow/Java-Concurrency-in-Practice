@@ -3,7 +3,7 @@ public class ThisEscape {
 
     public ThisEscape(EventSource source) {
         source.registerListener(
-            e -> doSomething(e)
+            this::doSomething
         );
 
         // Sleep for a short duration (200 ms) before initializing the value field
