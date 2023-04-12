@@ -1,13 +1,13 @@
-import net.jcip.annotations.NotThreadSafe;
+import net.jcip.annotations.ThreadSafe;
 
-@NotThreadSafe
+@ThreadSafe
 public class UnsafeSequence {
     private int value;
 
     /**
      * Returns a unique value.
      */
-    public int getNext() {
+    public synchronized int getNext() {
         return value++;
     }
 }
